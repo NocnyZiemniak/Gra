@@ -218,13 +218,11 @@ Korporacja (Arcadia) → wrogowie, ataki dla zasobów, wykorzystywani w eksperym
 
 
 
-
-
-Styl: Nowoczesna korporacja w ruinach wielkich miast, laboratoria, drony, eksperymenty na mutantach.
+Styl: Nowoczesna korporacja w ruinach wielkich miast, laboratoria, drony, eksperymenty na mutantach. Posiada prywatną armię, nierzadko slinjesza od niektórych państw
 
 
 
-Cele: Zmonopolizować mutacje, kontrolować zasoby i technologię, sprzedać ludzi-mutantów jako broń lub produkty.
+Cele: Zmonopolizować mutacje, kontrolować zasoby i technologię, sprzedać ludzi-mutantów jako broń lub produkty. Dominować świat zarówno gospodarcz jak i militarnie.                                          
 
 
 
