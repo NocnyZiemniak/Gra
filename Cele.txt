@@ -1,7 +1,5 @@
 1.Dialogi
 
-2.Poruszanie postacia
-
 3.Lokacje
 
 4.Więcej assetów
