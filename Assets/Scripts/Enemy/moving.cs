@@ -6,7 +6,11 @@ public class Enemy : MonoBehaviour
 {
     public float speed = 2f;
     public float detectionRange = 6f;
-    public int damage = 1;
+    public int damage = 10;
+
+    // NOWE zmienne do timera ataku
+    public float attackRate = 1f;       // co ile sekund zombie może uderzyć
+    private float nextAttackTime = 0f;   // czas następnego ataku
 
     private Transform player;
     private Rigidbody2D rb;
@@ -34,13 +38,20 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    // Atak przy kontakcie
+    // Atak przy kontakcie z timerem
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            //collision.gameObject.GetComponent<Health>()?.TakeDamage(damage);
-            Console.WriteLine("Atak");
+            // Sprawdzenie, czy minął czas od ostatniego ataku
+            if (Time.time >= nextAttackTime)
+            {
+                collision.gameObject.GetComponent<Health>()?.taking_damage(damage);
+                Debug.Log("Atak");
+
+                // ustawiamy czas kolejnego ataku
+                nextAttackTime = Time.time + attackRate;
+            }
         }
     }
 }
