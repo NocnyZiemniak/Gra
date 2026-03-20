@@ -61,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("IsWalking", false);
             animator.SetFloat("LastInputx", move.x);
-            animator.SetFloat("IsWalking", move.y);
+            animator.SetFloat("LastInputy", move.y);
         }
     }
 }
