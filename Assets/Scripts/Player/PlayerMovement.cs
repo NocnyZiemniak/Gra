@@ -1,33 +1,44 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerMovementNewInput : MonoBehaviour
+[RequireComponent(typeof(Rigidbody2D))]
+public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
 
-    private Vector2 movement;
+    private Rigidbody2D rb;
+    private Vector2 movementInput;
 
-    void Update()
+    // InputAction do ruchu
+    private InputAction moveAction;
+
+    private void Awake()
     {
-        // Odczyt inputu wprost z klawiatury / gamepada
-        var keyboard = Keyboard.current;
-        if (keyboard != null)
-        {
-            movement = Vector2.zero;
+        rb = GetComponent<Rigidbody2D>();
 
-            if (keyboard.wKey.isPressed || keyboard.upArrowKey.isPressed)
-                movement.y += 1;
-            if (keyboard.sKey.isPressed || keyboard.downArrowKey.isPressed)
-                movement.y -= 1;
-            if (keyboard.aKey.isPressed || keyboard.leftArrowKey.isPressed)
-                movement.x -= 1;
-            if (keyboard.dKey.isPressed || keyboard.rightArrowKey.isPressed)
-                movement.x += 1;
+        // Tworzymy InputAction w kodzie
+        moveAction = new InputAction("Move", InputActionType.Value, "<Keyboard>/w");
 
-            movement = movement.normalized;
-        }
+        // Dodajemy 2DCompositeBinding dla WASD
+        moveAction.AddCompositeBinding("2DVector")
+            .With("Up", "<Keyboard>/w")
+            .With("Down", "<Keyboard>/s")
+            .With("Left", "<Keyboard>/a")
+            .With("Right", "<Keyboard>/d");
 
-        // Ruch gracza
-        transform.position += (Vector3)movement * moveSpeed * Time.deltaTime;
+        // Gamepad analog
+        moveAction.AddBinding("<Gamepad>/leftStick");
+
+        // Callback przy zmianie wartości
+        moveAction.performed += ctx => movementInput = ctx.ReadValue<Vector2>();
+        moveAction.canceled += ctx => movementInput = Vector2.zero;
+
+        // Włączamy akcję
+        moveAction.Enable();
+    }
+
+    private void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + movementInput * moveSpeed * Time.fixedDeltaTime);
     }
 }
