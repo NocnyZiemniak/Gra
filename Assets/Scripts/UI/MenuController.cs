@@ -8,7 +8,6 @@ public class MenuController : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("START RUNNING");
         menuCanvas.SetActive(false);
     }
 
