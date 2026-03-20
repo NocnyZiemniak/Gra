@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: ebf7dbfbf9ba7a54da7260519b35db9f
+guid: f16df130d24658a4faeb2df80029a64d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6377888361505287327
-    second: Character_up_idle-Sheet6_0
+      213: 2605838220428204947
+    second: Character_side-left_run-Sheet6_0
+  - first:
+      213: 6419133849109067430
+    second: Character_side-left_run-Sheet6_1
+  - first:
+      213: 6962806648699507757
+    second: Character_side-left_run-Sheet6_2
+  - first:
+      213: 3417177762596350269
+    second: Character_side-left_run-Sheet6_3
+  - first:
+      213: -7005427518311956169
+    second: Character_side-left_run-Sheet6_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Character_up_idle-Sheet6_0
+      name: Character_side-left_run-Sheet6_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 11
-        height: 16
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,20 +140,108 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1631163a3503d77a0800000000000000
-      internalID: -6377888361505287327
+      spriteID: 39b52ce1e0cc92420800000000000000
+      internalID: 2605838220428204947
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_up_idle-Sheet6_1
+      name: Character_side-left_run-Sheet6_1
       rect:
         serializedVersion: 2
-        x: 11
+        x: 14
         y: 0
-        width: 11
-        height: 16
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a6f4d9c938551950800000000000000
+      internalID: 6419133849109067430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_side-left_run-Sheet6_2
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 0
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d245677a1cbd0a060800000000000000
+      internalID: 6962806648699507757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_side-left_run-Sheet6_3
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d396be1f1114c6f20800000000000000
+      internalID: 3417177762596350269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_side-left_run-Sheet6_4
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 0
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7310547d9c8b7ce90800000000000000
+      internalID: -7005427518311956169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_side-left_run-Sheet6_5
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,96 +250,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3df807e48ab150c41919e7e03eb0c079
-      internalID: 2109724409
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_up_idle-Sheet6_2
-      rect:
-        serializedVersion: 2
-        x: 22
-        y: 0
-        width: 11
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a63b182aa6f2b74b93fec919eb8e335
-      internalID: -475546969
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_up_idle-Sheet6_3
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 0
-        width: 11
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 90cbad452b0a9f24284285b4895a616f
-      internalID: -1955766819
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_up_idle-Sheet6_4
-      rect:
-        serializedVersion: 2
-        x: 44
-        y: 0
-        width: 11
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1dd81f7ffc0b4a3419401e1d22dc0c51
-      internalID: 2060009565
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_up_idle-Sheet6_5
-      rect:
-        serializedVersion: 2
-        x: 55
-        y: 0
-        width: 11
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4eb95108a3d37c641a92b1e693286adf
-      internalID: 1811855794
+      spriteID: cdc08d53098cd7148949aab9b70d2d42
+      internalID: 1062624127
       vertices: []
       indices: 
       edges: []
@@ -248,7 +260,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f5a4ca12629ec2b488e37d935bb5bea7
+    spriteID: 27466e7b2589af24ba8cb93795c9430d
     internalID: 0
     vertices: []
     indices: 
@@ -258,14 +270,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":11.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":14.0,"y":17.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Character_up_idle-Sheet6_0: -6377888361505287327
-      Character_up_idle-Sheet6_1: 2109724409
-      Character_up_idle-Sheet6_2: -475546969
-      Character_up_idle-Sheet6_3: -1955766819
-      Character_up_idle-Sheet6_4: 2060009565
-      Character_up_idle-Sheet6_5: 1811855794
+      Character_side-left_run-Sheet6_0: 2605838220428204947
+      Character_side-left_run-Sheet6_1: 6419133849109067430
+      Character_side-left_run-Sheet6_2: 6962806648699507757
+      Character_side-left_run-Sheet6_3: 3417177762596350269
+      Character_side-left_run-Sheet6_4: -7005427518311956169
+      Character_side-left_run-Sheet6_5: 1062624127
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

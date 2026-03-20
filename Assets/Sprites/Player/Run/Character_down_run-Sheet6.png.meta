@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: ebf7dbfbf9ba7a54da7260519b35db9f
+guid: 0972043b5b4801441bc97554be471dfd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6377888361505287327
-    second: Character_up_idle-Sheet6_0
+      213: -6656360134478981206
+    second: Character_down_run-Sheet6_0
+  - first:
+      213: -5936620097091366615
+    second: Character_down_run-Sheet6_1
+  - first:
+      213: 6452979060939587243
+    second: Character_down_run-Sheet6_2
+  - first:
+      213: 288690224262415866
+    second: Character_down_run-Sheet6_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Character_up_idle-Sheet6_0
+      name: Character_down_run-Sheet6_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 11
-        height: 16
+        width: 13
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,20 +137,86 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1631163a3503d77a0800000000000000
-      internalID: -6377888361505287327
+      spriteID: aa71f4f79bbdf93a0800000000000000
+      internalID: -6656360134478981206
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_up_idle-Sheet6_1
+      name: Character_down_run-Sheet6_1
       rect:
         serializedVersion: 2
-        x: 11
+        x: 13
         y: 0
-        width: 11
-        height: 16
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9219c6aa973ec9da0800000000000000
+      internalID: -5936620097091366615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_down_run-Sheet6_2
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 0
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae765e34469d8950800000000000000
+      internalID: 6452979060939587243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_down_run-Sheet6_3
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 0
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af50a4bba32a10400800000000000000
+      internalID: 288690224262415866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_down_run-Sheet6_4
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 0
+        width: 13
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +225,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3df807e48ab150c41919e7e03eb0c079
-      internalID: 2109724409
+      spriteID: 0dae067b9e6b57e41b45f39dd98d7c4e
+      internalID: 1056801945
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_up_idle-Sheet6_2
+      name: Character_down_run-Sheet6_5
       rect:
         serializedVersion: 2
-        x: 22
+        x: 65
         y: 0
-        width: 11
-        height: 16
+        width: 13
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,74 +247,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a63b182aa6f2b74b93fec919eb8e335
-      internalID: -475546969
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_up_idle-Sheet6_3
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 0
-        width: 11
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 90cbad452b0a9f24284285b4895a616f
-      internalID: -1955766819
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_up_idle-Sheet6_4
-      rect:
-        serializedVersion: 2
-        x: 44
-        y: 0
-        width: 11
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1dd81f7ffc0b4a3419401e1d22dc0c51
-      internalID: 2060009565
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_up_idle-Sheet6_5
-      rect:
-        serializedVersion: 2
-        x: 55
-        y: 0
-        width: 11
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4eb95108a3d37c641a92b1e693286adf
-      internalID: 1811855794
+      spriteID: 98504c88b0a4c254a9fdb8570b1b5375
+      internalID: -1712715140
       vertices: []
       indices: 
       edges: []
@@ -248,7 +257,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f5a4ca12629ec2b488e37d935bb5bea7
+    spriteID: 49dd973e231708347bea21faac11dc04
     internalID: 0
     vertices: []
     indices: 
@@ -258,14 +267,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":11.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":13.0,"y":17.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Character_up_idle-Sheet6_0: -6377888361505287327
-      Character_up_idle-Sheet6_1: 2109724409
-      Character_up_idle-Sheet6_2: -475546969
-      Character_up_idle-Sheet6_3: -1955766819
-      Character_up_idle-Sheet6_4: 2060009565
-      Character_up_idle-Sheet6_5: 1811855794
+      Character_down_run-Sheet6_0: -6656360134478981206
+      Character_down_run-Sheet6_1: -5936620097091366615
+      Character_down_run-Sheet6_2: 6452979060939587243
+      Character_down_run-Sheet6_3: 288690224262415866
+      Character_down_run-Sheet6_4: 1056801945
+      Character_down_run-Sheet6_5: -1712715140
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

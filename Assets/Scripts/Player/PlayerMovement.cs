@@ -8,16 +8,17 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
     private Vector2 movementInput;
+    private Animator animator;
 
-    // InputAction do ruchu
     private InputAction moveAction;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
 
         // Tworzymy InputAction w kodzie
-        moveAction = new InputAction("Move", InputActionType.Value, "<Keyboard>/w");
+        moveAction = new InputAction("Move", InputActionType.Value);
 
         // Dodajemy 2DCompositeBinding dla WASD
         moveAction.AddCompositeBinding("2DVector")
@@ -39,6 +40,28 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // Ruch fizyczny
         rb.MovePosition(rb.position + movementInput * moveSpeed * Time.fixedDeltaTime);
+
+        // Animacje
+        UpdateAnimation(movementInput);
+    }
+
+    private void UpdateAnimation(Vector2 move)
+    {
+        if (animator == null) return;
+
+        if (move != Vector2.zero)
+        {
+            animator.SetFloat("Inputx", move.x);
+            animator.SetFloat("Inputy", move.y);
+            animator.SetBool("IsWalking", true);
+        }
+        else
+        {
+            animator.SetBool("IsWalking", false);
+            animator.SetFloat("LastInputx", move.x);
+            animator.SetFloat("IsWalking", move.y);
+        }
     }
 }
