@@ -32056,6 +32056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuController
   menuCanvas: {fileID: 586201374}
+  tabsController: {fileID: 1375260403}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -32425,6 +32426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   menuCanvas: {fileID: 586201374}
+  tabsController: {fileID: 1375260403}
 --- !u!1 &814453504
 GameObject:
   m_ObjectHideFlags: 0
