@@ -1,5 +1,3 @@
 1.Dialogi
 
 3.Lokacje
-
-4.Więcej assetów
