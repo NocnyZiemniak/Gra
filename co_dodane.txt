@@ -1,1 +1,1 @@
-Assety, fabuła, mapa państw
+Assety, fabuła, mapa państw, movement, kamera, animacje, menu, inventory

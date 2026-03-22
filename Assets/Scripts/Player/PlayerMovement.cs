@@ -1,33 +1,67 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerMovementNewInput : MonoBehaviour
+[RequireComponent(typeof(Rigidbody2D))]
+public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
 
-    private Vector2 movement;
+    private Rigidbody2D rb;
+    private Vector2 movementInput;
+    private Animator animator;
 
-    void Update()
+    private InputAction moveAction;
+
+    private void Awake()
     {
-        // Odczyt inputu wprost z klawiatury / gamepada
-        var keyboard = Keyboard.current;
-        if (keyboard != null)
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+
+        // Tworzymy InputAction w kodzie
+        moveAction = new InputAction("Move", InputActionType.Value);
+
+        // Dodajemy 2DCompositeBinding dla WASD
+        moveAction.AddCompositeBinding("2DVector")
+            .With("Up", "<Keyboard>/w")
+            .With("Down", "<Keyboard>/s")
+            .With("Left", "<Keyboard>/a")
+            .With("Right", "<Keyboard>/d");
+
+        // Gamepad analog
+        moveAction.AddBinding("<Gamepad>/leftStick");
+
+        // Callback przy zmianie wartości
+        moveAction.performed += ctx => movementInput = ctx.ReadValue<Vector2>();
+        moveAction.canceled += ctx => movementInput = Vector2.zero;
+
+        // Włączamy akcję
+        moveAction.Enable();
+    }
+
+    private void FixedUpdate()
+    {
+        // Ruch fizyczny
+        rb.MovePosition(rb.position + movementInput * moveSpeed * Time.fixedDeltaTime);
+
+        // Animacje
+        UpdateAnimation(movementInput);
+    }
+
+    private void UpdateAnimation(Vector2 move)
+    {
+        if (animator == null) return;
+
+        if (move != Vector2.zero)
         {
-            movement = Vector2.zero;
-
-            if (keyboard.wKey.isPressed || keyboard.upArrowKey.isPressed)
-                movement.y += 1;
-            if (keyboard.sKey.isPressed || keyboard.downArrowKey.isPressed)
-                movement.y -= 1;
-            if (keyboard.aKey.isPressed || keyboard.leftArrowKey.isPressed)
-                movement.x -= 1;
-            if (keyboard.dKey.isPressed || keyboard.rightArrowKey.isPressed)
-                movement.x += 1;
-
-            movement = movement.normalized;
+            animator.SetFloat("Inputx", move.x);
+            animator.SetFloat("Inputy", move.y);
+            animator.SetBool("IsWalking", true);
         }
-
-        // Ruch gracza
-        transform.position += (Vector3)movement * moveSpeed * Time.deltaTime;
+        else
+        {
+            animator.SetBool("IsWalking", false);
+            animator.SetFloat("LastInputx", move.x);
+            animator.SetFloat("LastInputy", move.y);
+        }
     }
 }
