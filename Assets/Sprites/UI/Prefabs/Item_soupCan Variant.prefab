@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 350940963937295341, guid: 017403ce32f682845b6e10f515d9b854, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4348664510329381291, guid: fed3ba3b40b3bcd4cb4442c8c63815bf, type: 3}
     - target: {fileID: 1988577002777256406, guid: 017403ce32f682845b6e10f515d9b854, type: 3}
       propertyPath: m_Name
       value: Item_soupCan Variant
