@@ -5,7 +5,7 @@ public class PlayerItemCollector : MonoBehaviour
     private Inventory inventory;
     void Start()
     {
-        inventory = FindObjectOfType<Inventory>();
+        inventory = FindAnyObjectByType<Inventory>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -18,6 +18,7 @@ public class PlayerItemCollector : MonoBehaviour
                 bool itemAdded = inventory.AddItem(collision.gameObject);
                 if (itemAdded)
                 {
+                    item.PickUp();
                     Destroy(collision.gameObject);
                 }
             }

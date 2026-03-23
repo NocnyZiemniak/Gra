@@ -20,6 +20,10 @@ PrefabInstance:
       propertyPath: ID
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2050550771463641050, guid: 017403ce32f682845b6e10f515d9b854, type: 3}
+      propertyPath: Name
+      value: Soup can
+      objectReference: {fileID: 0}
     - target: {fileID: 4516751927488475701, guid: 017403ce32f682845b6e10f515d9b854, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

@@ -117,6 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   ID: 1
+  Name: Item
 --- !u!212 &350940963937295341
 SpriteRenderer:
   serializedVersion: 2
