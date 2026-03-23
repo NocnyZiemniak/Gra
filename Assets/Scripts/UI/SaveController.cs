@@ -5,6 +5,7 @@ public class SaveController : MonoBehaviour
 {
     private string saveLocation;
     private Inventory inventoryController;
+    private HotBarController hotbarController; 
     public Transform player; // assign in Inspector
 
     void Start()
@@ -12,6 +13,7 @@ public class SaveController : MonoBehaviour
         // define save location
         saveLocation = Path.Combine(Application.persistentDataPath, "saveData.json");
         inventoryController= FindAnyObjectByType<Inventory>();
+        hotbarController = FindAnyObjectByType<HotBarController>();
 
         Debug.Log("Save path: " + saveLocation);
 
@@ -26,7 +28,8 @@ public class SaveController : MonoBehaviour
         SaveData saveData = new SaveData
         {
             playerPosition = player.position, //Fuck niggers
-            inventorySaveData = inventoryController.GetInventoryItems()
+            inventorySaveData = inventoryController.GetInventoryItems(),
+                hotbarSaveData = hotbarController.GetHotbarItems(),
         };
 
         File.WriteAllText(saveLocation, JsonUtility.ToJson(saveData, true));
@@ -51,6 +54,7 @@ public class SaveController : MonoBehaviour
             }
 
             inventoryController.SetInventoryItems(saveData.inventorySaveData);
+            hotbarController.SetHotbarItems(saveData.hotbarSaveData);
 
             Debug.Log("LOADED POSITION: " + saveData.playerPosition);
         }
