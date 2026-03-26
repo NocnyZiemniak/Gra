@@ -17,6 +17,10 @@ PrefabInstance:
       value: Item_pistol Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2050550771463641050, guid: 017403ce32f682845b6e10f515d9b854, type: 3}
+      propertyPath: ID
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050550771463641050, guid: 017403ce32f682845b6e10f515d9b854, type: 3}
       propertyPath: Name
       value: Pistol
       objectReference: {fileID: 0}
