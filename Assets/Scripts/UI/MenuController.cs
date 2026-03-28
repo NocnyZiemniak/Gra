@@ -19,21 +19,25 @@ public class MenuController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             ToggleMenuWithTab(0);
+          
         }
 
         if (Input.GetKeyDown(KeyCode.I))
         {
             ToggleMenuWithTab(1);
+           
         }
 
         if (Input.GetKeyDown(KeyCode.M))
         {
             ToggleMenuWithTab(2);
+           
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             ToggleMenuWithTab(3);
+            
         }
     }
 
@@ -44,6 +48,7 @@ public class MenuController : MonoBehaviour
             menuCanvas.SetActive(true);
             tabsController.ActiveTab(tabIndex);
             currentTab = tabIndex;
+            Time.timeScale = 0; // pauza
         }
         else
         {
@@ -51,11 +56,13 @@ public class MenuController : MonoBehaviour
             {
                 menuCanvas.SetActive(false);
                 currentTab = -1;
+                Time.timeScale = 1; // odpauzowanie
             }
             else
             {
                 tabsController.ActiveTab(tabIndex);
                 currentTab = tabIndex;
+                // NIE zmieniamy timeScale tutaj!
             }
         }
     }
